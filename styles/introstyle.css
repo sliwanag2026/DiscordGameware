@@ -1,0 +1,72 @@
+body {
+    margin: 0 !important;
+}
+
+#allofit {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/discord.png);
+}
+
+#loadingassets {
+    left: 50%;
+    top: 45%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    animation: 2s die forwards;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#loadingbar{
+    border: 2px solid black;
+    width: 30%;
+    height: 2vh;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    animation: 2s die forwards;
+}
+#progress{
+    animation: fakeprogress 2s forwards;
+    width: 0%;
+    position: relative;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+@keyframes fakeprogress{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+        opacity: 1.0;
+    }
+    100%{
+        width: 100%;
+        opacity: 0.0;
+    }
+}
+@keyframes die{
+    0%{
+        opacity: 1.0;
+    }
+    50%{
+        opacity: 1.0;
+    }
+    100%{
+        opacity: 0.0;
+    }
+}
+
+@media (max-width: 700px) {
+  #loadingassets {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,49 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#topmenu {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#body {
+  margin: 10vh 50px 50px 50px;
+  padding-top: 50px;
+}
+
+#logoout {
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+
+#logoin {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#aboutout {
+  float: right;
+  height: 100%;
+}
+
+#aboutout button {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  font-size: 1.5em;
+}
+
+.btn-dark {
+  margin: 0 10px;
+}

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style_shop.css">
+    <script src="../scripts/script_shop.js"></script>
+    <style>
+        @media only screen and (max-width:500px){
+            .image{
+                width: 50px;
+            }
+            #logo1{
+                left: 0%;
+                cursor: pointer;
+            }
+            #settings{
+                padding: 0;
+            }
+            #logo1{
+                left: 3% !important;
+            }
+            #image1{
+                width: 30px !important;
+                object-fit: contain;
+            }
+            #logo2{
+                left: -47% !important;
+            }
+            #image2{
+                width: 60px !important;
+                object-fit: contain;
+            }
+            #logo3{
+                left: 3% !important;
+            }
+            #image3{
+                width: 30px !important;
+                object-fit: contain;
+            }
+            #Picture2{
+                width: 200px;
+            }
+            #Pictures9{
+                width: 223px;
+            }
+            #Pictures10{
+                width: 223px;
+            }
+            #Pictures11{
+                width: 223px;
+            }
+            #Pictures12{
+                width: 223px;
+            }
+            #Picture13{
+                width: 223px;
+            }
+            #Picture15{
+                width: 223px;
+            }
+            #Picture16{
+                width: 223px;
+            }
+            #Picture18{
+                object-fit: contain;
+                width: 223px;
+            }
+            #Picture19{
+                width: 223px;
+            }
+            #Picture20{
+                width: 223px;
+            }
+            #Picture21{
+                width: 223px;
+            }
+            #Picture23{
+                width: 223px;
+            }
+            #Picture24{
+                width: 223px;
+            }
+            #totalinner{
+                margin: 0;
+            }
+            #totalinnerleft{
+                text-align: center;
+            }
+            #submitstuff{
+                text-align: center;
+            }
+            #submitbuttonfr{
+                margin:0 ;
+                width: 50%;
+            }
+            #itemdescriptionstuff{
+                padding: 0;
+                font-size: 10px !important;
+            }
+        }
+        @media only screen and (max-width: 800px){
+            #categoriesstuff{
+                justify-content:left;
+            }
+            .bruh{
+                width: 100%;
+            }
+            .image{
+                width: 50px;
+            }
+            #logo1{
+                left: 10%;
+                cursor: pointer;
+            }
+            #settings{
+                padding: 0;
+            }
+            #image1{
+                width: 50px;
+                object-fit: contain;
+            }
+            #logo2{
+                left: -30%;
+            }
+            #image2{
+                width: 100px;
+                object-fit: contain;
+            }
+            #logo3{
+                left: 10%;
+            }
+            #image3{
+                width: 50px;
+                object-fit: contain;
+            }
+            #Picture2{
+                width: 200px;
+            }
+            #Pictures9{
+                width: 223px;
+            }
+            #Pictures10{
+                width: 223px;
+            }
+            #Pictures11{
+                width: 223px;
+            }
+            #Pictures12{
+                width: 223px;
+            }
+            #Picture13{
+                width: 223px;
+            }
+            #Picture15{
+                width: 223px;
+            }
+            #Picture16{
+                width: 223px;
+            }
+            #Picture18{
+                width: 223px;
+            }
+            #Picture19{
+                width: 223px;
+            }
+            #Picture20{
+                width: 223px;
+            }
+            #Picture21{
+                width: 223px;
+            }
+            #Picture23{
+                width: 223px;
+            }
+            #Picture24{
+                width: 223px;
+            }
+            #totalinner{
+                margin: 0;
+            }
+            #totalinnerleft{
+                text-align: center;
+            }
+            #submitstuff{
+                text-align: center;
+            }
+            #submitbuttonfr{
+                margin:0 ;
+                width: 50%;
+            }
+            #itemdescriptionstuff{
+                padding: 0;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="allofit" class="fluid-container">
+        <div id="therow" class="row">
+            <div id="settings" class="col-1">
+                <span id="logo1" onclick="homepage()">
+                    <img id="image1" src="../images/logo1.png" alt="">
+                </span>
+                <span id="logo2" onclick="cart()">
+                    <img id="image2" src="../images/cart.png" alt="">
+                </span>
+                <span id="logo3" onclick="about()">
+                    <img id="image3" src="../images/about.png" alt="">
+                </span>
+            </div>
+            <div id="right" class="col-11">
+                <div id="categoriesstuff" class="row">
+                    <span id="logo4" class="bruh" onclick="clickcat(1)"><img id="image4" class="image"
+                            src="../images/vouchers.png" alt=""> VOUCHERS </span>
+                    <span id="logo5" class="bruh" onclick="clickcat(2)"><img id="image5" class="image"
+                            src="../images/gear.png" alt=""> GEAR </span>
+                    <span id="logo6" class="bruh" onclick="clickcat(3)"><img id="image6" class="image"
+                            src="../images/pcparts.png" alt=""> PC PARTS</span>
+                    <span id="logo7" class="bruh" onclick="clickcat(4)"><img id="image7" class="image"
+                            src="../images/games.png" alt=""> GAMES </span>
+                </div>
+                <div id="belowcategories" class="row">
+                    <div id="itemlistingstuff" class="col-9">
+                        <div id="cat1">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 800</h3>
+                                    <img id="Picture1" src="../images/Picture1.png" alt="">
+                                    <h2>Robux</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(0, 0)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(0, 0)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 2500</h3>
+                                    <img id="Picture2" src="../images/Picture2.png" alt="">
+                                    <h2>Mobile Legends Diamonds</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(0, 1)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(0, 1)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 1000</h3>
+                                    <img id="Picture3" src="../images/Picture3.png" alt="">
+                                    <h2>Steam Points</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(0, 2)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(0, 2)">About
+                                        Item</button>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 1000</h3>
+                                    <img id="Picture4" src="../images/Picture4.png" alt="">
+                                    <h2>Valorant Points</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(0, 3)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(0, 3)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 170</h3>
+                                    <img id="Picture5" src="../images/Picture5.png" alt="">
+                                    <h2>Warframe Platinum</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(0, 4)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(0, 4)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 55</h3>
+                                    <img id="Picture6" src="../images/Picture6.png" alt="">
+                                    <h2>Clash of Clans Gems</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(0, 5)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(0, 5)">About
+                                        Item</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cat2">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 50</h3>
+                                    <img id="Picture7" src="../images/Picture7.png" alt="">
+                                    <h2>Finger Sleeves</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(1, 0)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(1, 0)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 400</h3>
+                                    <img id="Picture8" src="../images/Picture8.png" alt="">
+                                    <h2>Phone Cooler</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(1, 1)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(1, 1)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 4000</h3>
+                                    <img id="Pictures9" src="../images/Picture9.png" alt="">
+                                    <h2>Mechanical Keyboard</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(1, 2)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(1, 2)">About
+                                        Item</button>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 375</h3>
+                                    <img id="Pictures10" src="../images/Picture10.png" alt="">
+                                    <h2>Gaming Mouse</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(1, 3)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(1, 3)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 100</h3>
+                                    <img id="Pictures11" src="../images/Picture11.png" alt="">
+                                    <h2>Mouse Pad</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(1, 4)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(1, 4)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 350</h3>
+                                    <img id="Pictures12" src="../images/Picture12.png" alt="">
+                                    <h2>Headphones</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(1, 5)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(1, 5)">About
+                                        Item</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cat3">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 25000</h3>
+                                    <img id="Picture13" src="../images/Picture13.png" alt="">
+                                    <h2>Motherboard</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(2, 0)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(2, 0)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 22500</h3>
+                                    <img id="Picture14" src="../images/Picture14.png" alt="">
+                                    <h2>CPU</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(2, 1)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(2, 1)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 17500</h3>
+                                    <img id="Picture15" src="../images/Picture15.png" alt="">
+                                    <h2>RAM</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(2, 2)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(2, 2)">About
+                                        Item</button>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 32500</h3>
+                                    <img id="Picture16" src="../images/Picture16.png" alt="">
+                                    <h2>GPU</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(2, 3)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(2, 3)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 17500</h3>
+                                    <img id="Picture17" src="../images/Picture17.png" alt="">
+                                    <h2>Storage</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(2, 4)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(2, 4)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 13750</h3>
+                                    <img id="Picture18" src="../images/Picture18.png" alt="" width="450" height="300">
+                                    <h2>PSU</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(2, 5)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(2, 5)">About
+                                        Item</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cat4">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 3000</h3>
+                                    <img id="Picture19" src="../images/Picture19.png" alt="">
+                                    <h2>R2D2</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(3, 0)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(3, 0)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 1600</h3>
+                                    <img id="Picture20" src="../images/Picture20.png" alt="">
+                                    <h2>Minecraft</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(3, 1)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(3, 1)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 850</h3>
+                                    <img id="Picture21" src="../images/Picture21.png" alt="">
+                                    <h2>GTA V</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(3, 2)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(3, 2)">About
+                                        Item</button>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 3900</h3>
+                                    <img id="Picture22" src="../images/Picture22.png" alt="">
+                                    <h2>Jedi: Survivor</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(3, 3)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(3, 3)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 1350</h3>
+                                    <img id="Picture23" src="../images/Picture23.png" alt="">
+                                    <h2>JoJo’s Bizarre Adventures: Eyes of Heaven</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(3, 4)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(3, 4)">About
+                                        Item</button>
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <h3>Php 2800</h3>
+                                    <img id="Picture24" src="../images/Picture24.png" alt="">
+                                    <h2>Escape from Tarkov</h2>
+                                    <button class="cartbtn btn btn-primary" onclick="addtocart(3, 5)">Add to
+                                        Cart</button>
+                                    <button class="cartbtn btn btn-primary" onclick="showdescription(3, 5)">About
+                                        Item</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="itemdescriptionstuff" class="col-3">
+                        <div id="description">
+                            <div id="descriptioninner">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+
+            </div>
+            <form action="http://sirjm.infinityfreeapp.com/checkout.php" id="cart" class="col-11" method="get">
+                <div id="somethinginsidethecart"> CART </div>
+                <div id="rightinside">
+                    No Items Ordered
+                </div>
+                <div id="totalprice">
+                    <div id="totalinner">
+                        <div id="totalinnerleft">
+                            <h2>Total: 0 PHP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="submitstuff">
+                    <input type="submit" value="Order" class="btn btn-primary" id="submitbuttonfr">
+                    <div id="invisible">
+                        <input id="username" type="hidden" name="cust_name" value="">
+                        <input id="useradd" type="hidden" name="cust_addr" value="">
+                        <input id="useremail" type="hidden" name="cust_email" value="">
+                        <input id="userorder" type="hidden" name="cust_order" value="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

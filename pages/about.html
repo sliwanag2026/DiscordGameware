@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/aboutus.css">
+  <script src="../scripts/aboutus.js"></script>
+  <style>
+    @media (max-width:500px){
+        .andreititle{
+            font-size: 30px !important;
+        }
+
+        .andreirealdescription{
+            font-size: 20px !important;
+        }
+
+        #andrei{
+            width: 50px !important;
+            height: 50px !important;
+            object-fit: cover;
+        }
+
+        #chris{
+            width: 50px !important;
+            height: 50px !important;
+            object-fit: cover;
+        }
+        #sheldon{
+            width: 50px !important;
+            height: 50px !important;
+            object-fit: cover;
+        }
+
+        .descriptionpfp{
+            width: 50px !important;
+            height: 50px !important;
+            object-fit: cover;
+        }   
+
+        #settings{
+            padding: 0 !important;
+        }
+        #image1{
+            width: 30px !important;
+            height: 35.4px !important;
+            object-fit: contain;
+        }
+        #logo1{
+            left: 5% !important;
+        }
+    }
+
+    @media (max-width:1000px){
+        .andreititle{
+            font-size: 50px;
+        }
+
+        .andreirealdescription{
+            font-size: 20px;
+        }
+
+        #andrei{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        #chris{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        #sheldon{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .descriptionpfp{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }   
+
+        #settings{
+            padding: 0;
+        }
+        #image1{
+            width: 60px;
+            height: 70.8px;
+            object-fit: contain;
+        }
+        #logo1{
+            left: 3%;
+        }
+    }
+  </style>
+</head>
+
+<body>
+    <div id="allofit" class="fluid-container">
+        <div id="therow" class="row">
+            <div id="settings" class="col-1">
+                <span id="logo1" onclick="homepage()">
+                    <img id="image1" src="../images/logo1.png" alt="" width="100">
+                </span>
+            </div>
+            <div id="right" class="col-11">
+                <div id="categoriesstuff" class="row">
+                    <span id="logo4" class="bruh" > ABOUT THE DEVS! </span>
+                </div>
+                <div id="belowcategories" class="row">
+                    <div id="itemlistingstuff" class="col-5">
+                          <div id="cat1">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <img class="pfp" id="andrei" src="../images/andrei.png" alt="" onclick="andrei()">
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <img class="pfp" id="chris" src="../images/chris.png" alt="" onclick="chris()">
+                                </div>
+                                <div class="col-lg-12 realclass">
+                                    <div></div>
+                                    <img class="pfp" id="sheldon" src="../images/sheldon.png" alt="" onclick="sheldon()">
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div id="descriptionreal" class="col-7">
+                        <div id="andreidescription">
+                            <div class="insidethedescription">
+                                <img class="descriptionpfp" src="../images/andrei.png" alt="">
+                                <br> <div class="andreititle"> Andrei</div> <br>
+                                <p class="andreirealdescription"> Main Graphic Designer and the one behind the scam operation taking place on the site.</p>
+                            </div>
+                        </div>
+                        <div id="chrisdescription">
+                            <div class="insidethedescription">
+                                <img class="descriptionpfp" src="../images/chris.png" alt="">
+                                <br> <div class="andreititle"> Chris</div> <br>
+                                <p class="andreirealdescription"> The backend developer of the site and leader of the sites development process. </p>
+                            </div>
+                        </div>
+                        <div id="sheldondescription">
+                            <div class="insidethedescription">
+                                <img class="descriptionpfp" src="../images/sheldon.png" alt="">
+                                <br> <div class="andreititle"> Sheldon</div> <br>
+                                <p class="andreirealdescription"> Main Front-end developer and css animator for our scam site operation </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+</body>
+
+</html>
